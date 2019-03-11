@@ -1,0 +1,139 @@
+%==============================================================================
+% Voorbeeld gebruik documentklasse hogent-article
+%==============================================================================
+%
+% Compileren in TeXstudio:
+%
+% - Zorg dat Biber de bibliografie compileert (en niet Biblatex)
+%   Options > Configure > Build > Default Bibliography Tool: "txs:///biber"
+% - F5 om te compileren en het resultaat te bekijken.
+% - Als de bibliografie niet zichtbaar is, probeer dan F5 - F8 - F5
+%   Met F8 compileer je de bibliografie apart.
+%
+% Als je JabRef gebruikt voor het bijhouden van de bibliografie, zorg dan
+% dat je in ``biblatex''-modus opslaat: File > Switch to BibLaTeX mode.
+
+\documentclass{hogent-article}
+
+\usepackage{lipsum} % Voor vultekst
+
+%------------------------------------------------------------------------------
+% Metadata over het artikel
+%------------------------------------------------------------------------------
+
+%---------- Titel & auteur ----------------------------------------------------
+
+% TODO: geef werktitel van je eigen voorstel op
+\PaperTitle{Het effect van leeftijd op studeren}
+% TODO: geef op welk soort artikel dit is
+% Dit is typisch de opdracht en het vak waarvoor dit artikel geschreven is, bv.
+% ``Verslag onderzoeksproject Onderzoekstechnieken 2018-2019''
+\PaperType{Type artikel}
+
+% TODO: vul je eigen naam in als auteur, geef ook je emailadres mee!
+\Authors{Jonah De Smet\textsuperscript{1}, Nick Lersberg\textsuperscript{2}, Miriam Plugge\textsuperscript{3}, Lowie Scheirlinckx\textsuperscript{4}} % Authors
+
+% TODO: vul de naam van je co-promotor in.
+% Als het hier gaat om een voorstel voor de bachelorproef, dan ben je hier
+% verplicht de naam van je co-promotor in te vullen. Zoniet, dan kan je het
+% leeg laten.
+\CoPromotor{}
+
+% Contactinfo: Geef hier de contactgegevens van elke auteur van het artikel (en
+% indien van toepassing ook van de co-promotor).
+\affiliation{
+  \textsuperscript{1} \href{mailto:jonah.desmet@student.hogent.be}{jonah.desmet@student.hogent.be}}
+\affiliation{
+  \textsuperscript{2} \href{mailto:nick.lersberg@student.hogent.be}{mailto:nick.lergsberg@student.hogent.be}}
+\affiliation{
+    \textsuperscript{3} \href{mailto:miriam.plugge@student.hogent.be}{miriam.plugge@student.hogent.be}}
+\affiliation{
+    \textsuperscript{4} \href{mailto:lowie.scheirlinckx@student.hogent.be}{lowie.scheirlinckx@student.hogent.be}}
+
+%---------- Abstract ----------------------------------------------------------
+
+\Abstract{Hier schrijf je de samenvatting van je artikel, als een doorlopende tekst van één paragraaf. Wat hier zeker in moet vermeld worden: \textbf{Context} (Waarom is dit werk belangrijk?); \textbf{Nood} (Waarom moet dit onderzocht worden?); \textbf{Taak} (Wat ga je (ongeveer) doen?); \textbf{Object} (Wat staat in dit document geschreven?); \textbf{Resultaat} (Wat verwacht je van je onderzoek?); \textbf{Conclusie} (Wat verwacht je van van de conclusies?); \textbf{Perspectief} (Wat zegt de toekomst voor dit werk?).
+
+Bij de sleutelwoorden geef je het onderzoeksdomein, samen met andere sleutelwoorden die je werk beschrijven.
+}
+
+%---------- Onderzoeksdomein en sleutelwoorden --------------------------------
+% TODO: Vul de sleutelwoorden aan.
+
+
+\Keywords{Onderzoeksdomein; Sleutelwoord1; Sleutelwoord2; Sleutelwoord3}
+\newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
+
+%---------- Titel, inhoud -----------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+\maketitle % Print the title and abstract box
+\tableofcontents % Print the contents section
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%------------------------------------------------------------------------------
+% Hoofdtekst
+%------------------------------------------------------------------------------
+
+\section{Inleiding}
+Studeren is een belangrijk onderdeel in het leven van de student. Er zijn echter vele manieren waarop je kan studeren en welke is nu juist de beste? In dit onderzoek ligt de focus op retrieval practice, een studiemethode waarbij je ingestudeerde leerstof opnieuw gaat ophalen. Houdt deze methode stand tegenover andere methoden of is deze overgewaardeerd? Wij gaan het experiment van Roediger en Karpicke uit “Test-Enhanced Learning Taking Memory Tests Improves Long-Term Retention” nabootsen. Verder stellen we ons de vraag: “Wat is de invloed van leeftijd bij het toepassen van verschillende studiemethoden?”. Aan de hand van dit experiment en het bijkomend literatuuronderzoek proberen wij deze vraag te beantwoorden.
+
+\section{Overzicht literatuur}
+
+Een belangrijke manier om de toegang tot kennis in het geheugen te behouden is het gebruiken – ophalen – van deze informatie. In tegenstelling tot machinale geheugens wordt bij mensen de staat van de op te halen informatie beïnvloed. Bij het meervoudig ophalen, zal dit makkelijker verlopen. Een persoon zal een betere prestatie afleggen bij een test als er een eerdere ophaling is geweest dan een extra studiegelegenheid of helemaal geen voorgaande gebeurtenis. 
+Twee mogelijkheden zijn dat ofwel de informatie beter in het geheugen zit, of het ophalen efficiënter gebeurt. Indien deze eerste correct zou zijn, zouden zowel herkenning als ophaling even sterk moeten verbeteren, terwijl in realiteit herkenning veel sterker stijgt.
+Het ophalen van informatie uit langetermijngeheugen is een complexe zaak. Door informatie op te halen, is het mogelijk om hierop te ‘oefenen’. Hoe meer er geoefend wordt, hoe makkelijker het wordt de informatie op te halen.
+\cite{Bjork1988} \par
+\cite{Pastoetter2014}
+\smallskip
+
+Retrieval practice is een actieve manier van het leren van materie, de materie wordt “van binnenuit” terug naar boven gehaald. De hiervan tegenliggende is het passief leren. De student in kwestie gaat de informatie van een buitenstaande bron terug weer oproepen door bijvoorbeeld het herlezen van samenvatting of cursussen. \par
+Retrieval practice heeft enkele punten die aangekaart kunnen worden tegenover de traditionele manier. De student zal de te leren informatie veel makkelijker en sneller kunnen opslaan in zijn lange termijngeheugen. Hoe meer testen er worden afgelegd hoe beter dit resultaat naar boven zal komen. Als de student makkelijke materie zou leren zoals bijvoorbeeld een naam aan een bepaald gezicht plakken en hierop direct testen zou uitvoeren gaat dit weinig resultaat teweegbrengen er is een langere periode nodig dan tussen het leren en afleggen van de test. Deze vorige punten brengen onrechtstreeks met zich mee dat de student dus op meer frequente basis zal leren in tegenstelling tot de tegenwoordige methode maar studenten slechts één of twee lange en intensieve studiesessies hebben. \par
+
+Ten slotte is retrieval practice niet enkel goed voor specifieke antwoorden te formuleren en te onthouden, dit wordt vaak gezegd omdat bij vele onderzoeken studenten steeds dezelfde test afnemen, echter is het tegendeel bewezen en kan de student zijn kennis ook perfect verwerven in vragen die een andere context hebben dan voorafgaande testen. \par
+
+Een andere aftakking van retrieval practices is het enhanced testing, \cite{Baghdady2014} gaat hier over, het doel van deze studie was het meten van het effect van testen op studenten om de kwaliteit van hun kennis in kaart te brengen. De aanwezigheid van de basis wetenschappelijke test toonde aan een verbetering te zijn voor de kwaliteit van de kennis die de studenten opnamen. 
+\smallskip
+
+Ook wel kennis over de eigen kennis m.a.w. hoe goed iemand denkt leerstof te beheersen. Afhankelijk van de studiemethode kan iemands beeld van zijn eigen kennis vrij vertekend zijn. Zo kan men soms bijvoorbeeld de illusie krijgen dat je de leerstof goed beheerst al blijkt dit in de realiteit niet zo te zijn. In “Retrieval practice produces more learning than elaborative studying with concept mapping” en “Judgement of knowing: The influence of retrieval practice” gaat men kijken welke studiemethoden leiden tot de beste voorspellingen van eigen kennis. In “Judgement of knowing: The influence of retrieval practice” komt men tot de conclusie dat retrieval practice leidt tot een preciezer beeld van de eigen kennis dan enkel studeren. Bij “Retrieval practice produces more learning than elaborative studying with concept mapping” gebeurt er echter iets opmerkelijks. Studenten die studeerden a.d.h.v. retrieval practice onderschatten hun kennis over het onderwerp. Zo voorspelden ze de laagste score te behalen van alle studiemethoden ondanks het behalen van de beste resultaten. Dit staat in schril contrast met de groep die eenmalig studeerde, deze dacht hoog te scoren maar behaalde de laagste resultaten. Dit toont het belang van metacognitie bij het studeer proces aan.
+\cite{Karpicke2011}
+\smallskip
+
+Tijdens het afleggen van tests zijn er verschillende mogelijkheden manier getest. Ofwel kregen studenten 1-min de tijd tussen de testen of werd er pas een test afgelegd elke 6-min. De finale test voor beide groepen werden 1 week laten gehouden. De resultaten van het onderzoek wijzen erop dat studenten in de 6-min interval een aanzienlijk deel meer herinnerde dan de groep die elke minuut een test afgelegd had. We kunnen hieruit concluderen dat een langere periode tussen testen dus positieve gevolgen heeft op het lange termijngeheugen. Een andere manier is het gebruiken van een steeds groter wordende interval tussen testen. Dit zou een optimale manier zijn voor het herinneren van materie als een test moet afgelegd worden kort na de laatste leerfase echter is het houden van steeds dezelfde interval de beste manier wanneer een test later volgt, stel één week later. Echter staat het onderzoek tussen de twee methodes nog niet volledig op punt en is er dus verdere studie nodig. 
+
+
+
+
+
+
+
+\section{Methodologie}
+
+\lipsum[10-12]
+
+\section{Experimenten}
+
+\lipsum[14-18]
+
+\section{Analyse resultaten}
+
+\lipsum[18-21]
+
+\section{Conclusie}
+
+\lipsum[22-23]
+
+%------------------------------------------------------------------------------
+% Referentielijst
+%------------------------------------------------------------------------------
+% TODO: de gerefereerde werken moeten in BibTeX-bestand ``bibliografie.bib''
+% voorkomen. Gebruik JabRef om je bibliografie bij te houden en vergeet niet
+% om compatibiliteit met Biber/BibLaTeX aan te zetten (File > Switch to
+% BibLaTeX mode)
+
+\phantomsection
+\printbibliography[heading=bibintoc]
+
+\end{document}
